@@ -1,0 +1,128 @@
+html{
+     body{  
+        background-image: linear-gradient(180deg,#30475E 10%,#3C415C 90%);
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+        
+    } 
+    html{
+        font-size: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    a:link 
+    {
+        color: rgb(255, 176, 247);
+        text-decoration: none;
+        
+    }
+    a:visited 
+    {
+        color: #171c49;
+        text-decoration: none;
+    }
+    a:hover 
+    {
+        color: whitesmoke;
+        text-decoration: underline;
+    }
+    a:active 
+    {
+        color:aqua;
+        text-decoration: underline;
+    }
+    .name{
+        color: rgb(21, 182, 226);
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .titles{
+        color: rgb(36, 157, 95);
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: underline;
+        
+    }
+    .date{
+        color: rgb(224, 220, 25);
+    }
+    #Education{
+        background-color: #67729D ;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+        border-radius: 0px;
+        box-shadow: 0 0 2px 2px #30475E inset;
+        margin-left: 50%;
+    }
+   #AnupPhoto
+   {
+    border-radius: 20px;
+    border: 10px;
+    box-shadow: 0 0 10px 10px #30475E inset;
+    
+   }
+   #summary
+   {
+    font-size: 2rem;
+    
+
+   }
+   #AnupThapa  {
+    background-color: #427D9D;
+    box-shadow: 0 0 2px 2px #30475E inset;
+    padding: 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+   }
+
+   #WorkExperience
+   {
+    background-color: #427D9D;
+    margin-right: 50%;
+    padding: 10px;
+   }
+   #skills
+   {
+    background-color:#5C5470 ;
+    margin-left: 50%;
+    padding: 10px;
+   }
+
+   #SoftwareSkills
+   {
+    background-color: #3C415C;
+    margin-right: 50%;
+    padding: 10px;
+   }
+
+   #portfolio
+   {
+    background-color:#4A55A2 ;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    text-align: center;
+   }
+   #FXReel
+   {
+    font-size: 1.5rem;
+   }
+   #AnimationReel
+   {
+    font-size: 1.5rem;
+   }
+   #ProductRendering
+   {
+    font-size: 1.5rem;
+   }
+   #NohTheater
+   {
+    font-size: 1.5rem;
+   }
+   #footer
+   {
+    margin-left: 45%;
+   }
+} 
