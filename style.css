@@ -1,22 +1,34 @@
 html{
      body{  
-        background-image: linear-gradient(180deg,#30475E 10%,#3C415C 90%);
+        
+        background-image: linear-gradient(160deg, #000e16 0%, #00100e 100%);
+       
         font-family:Verdana, Geneva, Tahoma, sans-serif
         
+        
     } 
+    #all
+    {
+        height: 100vh;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 400px);
+
+    }
     html{
         font-size: 50px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     a:link 
     {
-        color: rgb(255, 176, 247);
+        color: rgb(255, 230, 252);
         text-decoration: none;
         
     }
     a:visited 
     {
-        color: #171c49;
+        color: #111538;
         text-decoration: none;
     }
     a:hover 
@@ -36,7 +48,7 @@ html{
         font-weight: bold;
     }
     .titles{
-        color: rgb(36, 157, 95);
+        color: rgb(216, 255, 235);
         font-weight: bold;
         font-size: 2rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -44,22 +56,31 @@ html{
         
     }
     .date{
-        color: rgb(224, 220, 25);
+        color: rgb(255, 253, 159);
     }
-    #Education{
-        background-color: #67729D ;
+    #Education
+    {
+        background-color: #84defc ;
         padding-left: 10px;
         padding-bottom: 10px;
 
         border-radius: 0px;
-        box-shadow: 0 0 2px 2px #30475E inset;
-        margin-left: 50%;
+        /* margin-left: 50%; */
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: 1 / 2 / 2 / ;
+       
+    }
+    #Education li{
+        color: white;
     }
    #AnupPhoto
    {
-    border-radius: 20px;
+    border-radius: 100px;
     border: 10px;
-    box-shadow: 0 0 10px 10px #30475E inset;
+    /* box-shadow: 0 0 10px 10px #a6e0fb inset; */
     
    }
    #summary
@@ -69,60 +90,152 @@ html{
 
    }
    #AnupThapa  {
-    background-color: #427D9D;
-    box-shadow: 0 0 2px 2px #30475E inset;
+    /* /* background-color: #a6e0fb; */
+    box-shadow: 0 0 2px 2px #cce3fa inset; */
     padding: 10px;
-    margin-right: 25%;
-    margin-left: 25%;
-    text-align: center;
+    /* margin-right: 25%;
+    margin-left: 25%; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: column;
+    /* grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-area: 1 / 1 / 3 / 2;;
+    /*grid-area: columnStart rowStart columnEnd RowEnd ;*/
+    
+    
    }
 
    #WorkExperience
    {
-    background-color: #427D9D;
-    margin-right: 50%;
+    background-color: #3d9bcd;
+    /* margin-right: 50%; */
     padding: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 2 / 3 / 3;
+   }
+   #WorkExperience li
+   {
+    color: white;
    }
    #skills
    {
-    background-color:#5C5470 ;
-    margin-left: 50%;
+    background-color:#7fb6e6 ;
+    /* margin-left: 50%; */
     padding: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 1 / 4 / 2;
    }
 
    #SoftwareSkills
    {
-    background-color: #3C415C;
-    margin-right: 50%;
+    background-color: #54a8c7;
+    /* margin-right: 50%; */
     padding: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 2 / 4 / 3;
    }
 
    #portfolio
    {
     background-color:#4A55A2 ;
-    margin-left: 25%;
-    margin-right: 25%;
+    
+    /* margin-left: 25%;
+    margin-right: 25%; */
     padding: 10px;
-    text-align: center;
+    text-align: center; 
+    grid-area: 4 / 1 / 5 / 3 ;
+    height: 810px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    
+   }
+   #portfolio>h2
+   {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: column;
+
    }
    #FXReel
    {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 1 / 3 / 2;
     font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
    }
    #AnimationReel
    {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 2 / 3 / 3;
     font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
    }
    #ProductRendering
    {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 1 / 4 / 2; 
     font-size: 1.5rem;
    }
    #NohTheater
    {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 2 / 4 / 3;
     font-size: 1.5rem;
    }
+   #portfolio p
+   {
+    color: white;
+   }
+   
    #footer
    {
     margin-left: 45%;
+   }
+   #skills li
+   {
+    color: rgb(205, 247, 255);
+   }
+   #SoftwareSkills li
+   {
+    color: rgb(205, 247, 255);
+   }
+   #AnupThapa p
+   {
+    color: #ffffff;
    }
 } 
